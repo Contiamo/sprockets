@@ -31,8 +31,8 @@ module Sprockets
       @context_class = Class.new(Context)
 
       # Set MD5 as the default digest
-      require 'digest/md5'
-      @digest_class = ::Digest::MD5
+      require 'digest/sha2'
+      @digest_class = ::Digest::SHA256
       @version = ''
 
       @mime_types        = {}
